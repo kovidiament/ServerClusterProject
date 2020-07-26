@@ -1,0 +1,2412 @@
+
+calling mvn package
+[[1;34mINFO[m] Scanning for projects...
+[[1;33mWARNING[m] 
+[[1;33mWARNING[m] Some problems were encountered while building the effective model for stage4:stage4:jar:1.0-SNAPSHOT
+[[1;33mWARNING[m] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-compiler-plugin is missing. @ line 13, column 21
+[[1;33mWARNING[m] 
+[[1;33mWARNING[m] It is highly recommended to fix these problems because they threaten the stability of your build.
+[[1;33mWARNING[m] 
+[[1;33mWARNING[m] For this reason, future Maven versions might no longer support building such malformed projects.
+[[1;33mWARNING[m] 
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m---------------------------< [0;36mstage4:stage4[0;1m >----------------------------[m
+[[1;34mINFO[m] [1mBuilding stage4 1.0-SNAPSHOT[m
+[[1;34mINFO[m] [1m--------------------------------[ jar ]---------------------------------[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-resources-plugin:2.6:resources[m [1m(default-resources)[m @ [36mstage4[0;1m ---[m
+[[1;33mWARNING[m] Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+[[1;34mINFO[m] skip non existing resourceDirectory /home/kovi/kovidiament/intro_to_distributed/stage4/src/main/resources
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-compiler-plugin:3.1:compile[m [1m(default-compile)[m @ [36mstage4[0;1m ---[m
+[[1;34mINFO[m] Nothing to compile - all classes are up to date
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-resources-plugin:2.6:testResources[m [1m(default-testResources)[m @ [36mstage4[0;1m ---[m
+[[1;33mWARNING[m] Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+[[1;34mINFO[m] skip non existing resourceDirectory /home/kovi/kovidiament/intro_to_distributed/stage4/src/test/resources
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-compiler-plugin:3.1:testCompile[m [1m(default-testCompile)[m @ [36mstage4[0;1m ---[m
+[[1;34mINFO[m] Nothing to compile - all classes are up to date
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-surefire-plugin:2.12.4:test[m [1m(default-test)[m @ [36mstage4[0;1m ---[m
+[[1;34mINFO[m] Surefire report directory: /home/kovi/kovidiament/intro_to_distributed/stage4/target/surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running edu.yu.cs.intro_to_distributed.stage4.Stage4Test
+5: switching from LOOKING to FOLLOWING
+6: switching from LOOKING to FOLLOWING
+4: switching from LOOKING to FOLLOWING
+3: switching from LOOKING to FOLLOWING
+2: switching from LOOKING to FOLLOWING
+8: switching from LOOKING to LEADING
+7: switching from LOOKING to FOLLOWING
+EXPECTED:
+System.err:
+[]
+System.out:
+[Hello, World]
+ACTUAL:
+System.err:
+[]
+System.out:
+[Hello, World]
+
+EXPECTED:
+System.err:
+[]
+System.out:
+[Hello, World #2!]
+ACTUAL:
+System.err:
+[]
+System.out:
+[Hello, World #2!]
+
+Server on port 8020 whose ID is 2 has the following ID as its leader: 8 and its state is FOLLOWING
+Server on port 8030 whose ID is 3 has the following ID as its leader: 8 and its state is FOLLOWING
+Server on port 8040 whose ID is 4 has the following ID as its leader: 8 and its state is FOLLOWING
+Server on port 8050 whose ID is 5 has the following ID as its leader: 8 and its state is FOLLOWING
+Server on port 8060 whose ID is 6 has the following ID as its leader: 8 and its state is FOLLOWING
+Server on port 8070 whose ID is 7 has the following ID as its leader: 8 and its state is FOLLOWING
+Server on port 8080 whose ID is 8 has the following ID as its leader: 8 and its state is LEADING
+5: no heartbeat from server 8 - server failed
+6: no heartbeat from server 8 - server failed
+5: switching from FOLLOWING to LOOKING
+2: no heartbeat from server 8 - server failed
+7: no heartbeat from server 8 - server failed
+6: switching from FOLLOWING to LOOKING
+2: switching from FOLLOWING to LOOKING
+7: switching from FOLLOWING to LOOKING
+3: no heartbeat from server 8 - server failed
+3: switching from FOLLOWING to LOOKING
+4: no heartbeat from server 8 - server failed
+4: switching from FOLLOWING to LOOKING
+4: switching from LOOKING to FOLLOWING
+3: switching from LOOKING to FOLLOWING
+6: switching from LOOKING to FOLLOWING
+5: switching from LOOKING to FOLLOWING
+2: switching from LOOKING to FOLLOWING
+7: switching from LOOKING to LEADING
+Server 2 removed dead server from table
+Server 3 removed dead server from table
+Server 4 removed dead server from table
+Server 5 removed dead server from table
+Server 6 removed dead server from table
+Server 7 removed dead server from table
+Server on port 8020 whose ID is 2 has the following ID as its leader: 7 and its state is FOLLOWING
+Server on port 8030 whose ID is 3 has the following ID as its leader: 7 and its state is FOLLOWING
+Server on port 8040 whose ID is 4 has the following ID as its leader: 7 and its state is FOLLOWING
+Server on port 8050 whose ID is 5 has the following ID as its leader: 7 and its state is FOLLOWING
+4: switching from FOLLOWING to LOOKING
+5: switching from FOLLOWING to LOOKING
+Server on port 8060 whose ID is 6 has the following ID as its leader: 7 and its state is FOLLOWING
+2: switching from FOLLOWING to LOOKING
+Server on port 8070 whose ID is 7 has the following ID as its leader: 7 and its state is LEADING
+3: switching from FOLLOWING to LOOKING
+6: switching from FOLLOWING to LOOKING
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 23.084 sec
+
+Results :
+
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0
+
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-jar-plugin:2.4:jar[m [1m(default-jar)[m @ [36mstage4[0;1m ---[m
+[[1;34mINFO[m] [1m------------------------------------------------------------------------[m
+[[1;34mINFO[m] [1;32mBUILD SUCCESS[m
+[[1;34mINFO[m] [1m------------------------------------------------------------------------[m
+[[1;34mINFO[m] Total time:  25.037 s
+[[1;34mINFO[m] Finished at: 2020-01-27T15:33:28-05:00
+[[1;34mINFO[m] [1m------------------------------------------------------------------------[m
+starting servers in background, gateway is zero, followers numbered 2 through 8
+4: switching from LOOKING to FOLLOWING
+7: switching from LOOKING to FOLLOWING8: switching from LOOKING to LEADING
+
+5: switching from LOOKING to FOLLOWING
+3: switching from LOOKING to FOLLOWING
+6: switching from LOOKING to FOLLOWING
+2: switching from LOOKING to FOLLOWING
+Server ID: 2 Role: Following
+Server ID: 3 Role: Following
+Server ID: 4 Role: Following
+Server ID: 5 Role: Following
+Server ID: 6 Role: Following
+Server ID: 7 Role: Following
+Server ID: 8 Role: Leading
+
+sending nine requests:
+
+ request 1: public class HelloWorld { public void run() { System.out.println("Hello, World1"); } }
+System.err:
+[]
+System.out:
+[Hello, World1
+]
+request 2: public class HelloWorld { public void run() { System.out.println("Hello, World2"); } }
+System.err:
+[]
+System.out:
+[Hello, World2
+]
+request 3: public class HelloWorld { public void run() { System.out.println("Hello, World3"); } }
+System.err:
+[]
+System.out:
+[Hello, World3
+]
+request 4: public class HelloWorld { public void run() { System.out.println("Hello, World4"); } }
+System.err:
+[]
+System.out:
+[Hello, World4
+]
+request 5: public class HelloWorld { public void run() { System.out.println("Hello, World5"); } }
+System.err:
+[]
+System.out:
+[Hello, World5
+]
+request 6: public class HelloWorld { public void run() { System.out.println("Hello, World6"); } }
+System.err:
+[]
+System.out:
+[Hello, World6
+]
+request 7: public class HelloWorld { public void run() { System.out.println("Hello, World7"); } }
+System.err:
+[]
+System.out:
+[Hello, World7
+]
+request 8: public class HelloWorld { public void run() { System.out.println("Hello, World8"); } }
+System.err:
+[]
+System.out:
+[Hello, World8
+]
+request 9: public class HelloWorld { public void run() { System.out.println("Hello, World9"); } }
+System.err:
+[]
+System.out:
+[Hello, World9
+]
+killing follower with id 5
+7: no heartbeat from server 5 - server failed
+2: no heartbeat from server 5 - server failed
+6: no heartbeat from server 5 - server failed
+8: no heartbeat from server 5 - server failed
+3: no heartbeat from server 5 - server failed
+4: no heartbeat from server 5 - server failed
+Server ID: 2 Role: Following
+Server ID: 3 Role: Following
+Server ID: 4 Role: Following
+Server ID: 6 Role: Following
+Server ID: 7 Role: Following
+Server ID: 8 Role: Leading
+
+ killing leader
+2: no heartbeat from server 8 - server failed
+2: switching from FOLLOWING to LOOKING
+7: no heartbeat from server 8 - server failed
+7: switching from FOLLOWING to LOOKING
+3: no heartbeat from server 8 - server failed
+3: switching from FOLLOWING to LOOKING
+6: no heartbeat from server 8 - server failed
+6: switching from FOLLOWING to LOOKING
+4: no heartbeat from server 8 - server failed
+4: switching from FOLLOWING to LOOKING
+3: switching from LOOKING to FOLLOWING
+2: switching from LOOKING to FOLLOWING
+4: switching from LOOKING to FOLLOWING
+6: switching from LOOKING to FOLLOWING
+7: switching from LOOKING to LEADING
+
+ sending  nine requests in background
+
+ request 1: public class HelloWorld { public void run() { System.out.println("Hello, World1"); } }
+
+request 2: public class HelloWorld { public void run() { System.out.println("Hello, World2"); } }
+
+request 3: public class HelloWorld { public void run() { System.out.println("Hello, World3"); } }
+
+request 4: public class HelloWorld { public void run() { System.out.println("Hello, World4"); } }
+
+request 5: public class HelloWorld { public void run() { System.out.println("Hello, World5"); } }
+
+request 6: public class HelloWorld { public void run() { System.out.println("Hello, World6"); } }
+
+request 7: public class HelloWorld { public void run() { System.out.println("Hello, World7"); } }
+
+request 8: public class HelloWorld { public void run() { System.out.println("Hello, World8"); } }
+
+request 9: public class HelloWorld { public void run() { System.out.println("Hello, World9"); } }
+
+waiting for background request pids
+System.err:
+[]
+System.out:
+[Hello, World6
+]System.err:
+[]
+System.out:
+[Hello, World2
+]System.err:
+[]
+System.out:
+[Hello, World3
+]System.err:
+[]
+System.out:
+[Hello, World8
+]System.err:
+[]
+System.out:
+[Hello, World1
+]System.err:
+[]
+System.out:
+[Hello, World9
+]System.err:
+[]
+System.out:
+[Hello, World5
+]System.err:
+[]
+System.out:
+[Hello, World7
+]System.err:
+[]
+System.out:
+[Hello, World4
+]getting gateway's list of roles form curl
+Server ID: 2 Role: Following
+Server ID: 3 Role: Following
+Server ID: 4 Role: Following
+Server ID: 6 Role: Following
+Server ID: 7 Role: Leading
+
+public class HelloWorld { public void run() { System.out.println("Hello, World post leader death1"); } } 
+System.err:
+[]
+System.out:
+[Hello, World post leader death1
+]
+public class HelloWorld { public void run() { System.out.println("Hello, World post leader death2"); } } 
+System.err:
+[]
+System.out:
+[Hello, World post leader death2
+]
+ getting gossip from curl for server 0:
+
+New Gossip Entry From Server 4 
+Received at 2020/01/27 15:33:31
+ServerID: 0 Sequence Number: 0
+ServerID: 2 Sequence Number: 0
+ServerID: 3 Sequence Number: 0
+ServerID: 5 Sequence Number: 0
+ServerID: 6 Sequence Number: 0
+ServerID: 7 Sequence Number: 0
+ServerID: 8 Sequence Number: 0
+
+New Gossip Entry From Server 8 
+Received at 2020/01/27 15:33:31
+ServerID: 0 Sequence Number: 1
+ServerID: 2 Sequence Number: 0
+ServerID: 3 Sequence Number: 0
+ServerID: 4 Sequence Number: 1
+ServerID: 5 Sequence Number: 0
+ServerID: 6 Sequence Number: 0
+ServerID: 7 Sequence Number: 0
+
+New Gossip Entry From Server 2 
+Received at 2020/01/27 15:33:31
+ServerID: 0 Sequence Number: 1
+ServerID: 3 Sequence Number: 0
+ServerID: 4 Sequence Number: 1
+ServerID: 5 Sequence Number: 1
+ServerID: 6 Sequence Number: 0
+ServerID: 7 Sequence Number: 1
+ServerID: 8 Sequence Number: 1
+
+New Gossip Entry From Server 6 
+Received at 2020/01/27 15:33:31
+ServerID: 0 Sequence Number: 1
+ServerID: 2 Sequence Number: 1
+ServerID: 3 Sequence Number: 0
+ServerID: 4 Sequence Number: 1
+ServerID: 5 Sequence Number: 1
+ServerID: 7 Sequence Number: 1
+ServerID: 8 Sequence Number: 1
+
+New Gossip Entry From Server 8 
+Received at 2020/01/27 15:33:32
+ServerID: 0 Sequence Number: 2
+ServerID: 2 Sequence Number: 1
+ServerID: 3 Sequence Number: 1
+ServerID: 4 Sequence Number: 2
+ServerID: 5 Sequence Number: 1
+ServerID: 6 Sequence Number: 1
+ServerID: 7 Sequence Number: 1
+
+New Gossip Entry From Server 3 
+Received at 2020/01/27 15:33:32
+ServerID: 0 Sequence Number: 1
+ServerID: 2 Sequence Number: 1
+ServerID: 4 Sequence Number: 1
+ServerID: 5 Sequence Number: 1
+ServerID: 6 Sequence Number: 1
+ServerID: 7 Sequence Number: 1
+ServerID: 8 Sequence Number: 1
+
+New Gossip Entry From Server 4 
+Received at 2020/01/27 15:33:34
+ServerID: 0 Sequence Number: 3
+ServerID: 2 Sequence Number: 2
+ServerID: 3 Sequence Number: 2
+ServerID: 5 Sequence Number: 2
+ServerID: 6 Sequence Number: 2
+ServerID: 7 Sequence Number: 2
+ServerID: 8 Sequence Number: 2
+
+New Gossip Entry From Server 7 
+Received at 2020/01/27 15:33:34
+ServerID: 0 Sequence Number: 3
+ServerID: 2 Sequence Number: 2
+ServerID: 3 Sequence Number: 2
+ServerID: 4 Sequence Number: 3
+ServerID: 5 Sequence Number: 3
+ServerID: 6 Sequence Number: 2
+ServerID: 8 Sequence Number: 3
+
+New Gossip Entry From Server 7 
+Received at 2020/01/27 15:33:36
+ServerID: 0 Sequence Number: 4
+ServerID: 2 Sequence Number: 3
+ServerID: 3 Sequence Number: 3
+ServerID: 4 Sequence Number: 4
+ServerID: 5 Sequence Number: 4
+ServerID: 6 Sequence Number: 3
+ServerID: 8 Sequence Number: 4
+
+New Gossip Entry From Server 2 
+Received at 2020/01/27 15:33:36
+ServerID: 0 Sequence Number: 4
+ServerID: 3 Sequence Number: 3
+ServerID: 4 Sequence Number: 4
+ServerID: 5 Sequence Number: 4
+ServerID: 6 Sequence Number: 3
+ServerID: 7 Sequence Number: 3
+ServerID: 8 Sequence Number: 4
+
+New Gossip Entry From Server 3 
+Received at 2020/01/27 15:33:36
+ServerID: 0 Sequence Number: 4
+ServerID: 2 Sequence Number: 4
+ServerID: 4 Sequence Number: 4
+ServerID: 5 Sequence Number: 4
+ServerID: 6 Sequence Number: 4
+ServerID: 7 Sequence Number: 4
+ServerID: 8 Sequence Number: 4
+
+New Gossip Entry From Server 4 
+Received at 2020/01/27 15:33:38
+ServerID: 0 Sequence Number: 5
+ServerID: 2 Sequence Number: 4
+ServerID: 3 Sequence Number: 4
+ServerID: 5 Sequence Number: 4
+ServerID: 6 Sequence Number: 4
+ServerID: 7 Sequence Number: 4
+ServerID: 8 Sequence Number: 4
+
+New Gossip Entry From Server 6 
+Received at 2020/01/27 15:33:38
+ServerID: 0 Sequence Number: 5
+ServerID: 2 Sequence Number: 5
+ServerID: 3 Sequence Number: 4
+ServerID: 4 Sequence Number: 5
+ServerID: 5 Sequence Number: 5
+ServerID: 7 Sequence Number: 5
+ServerID: 8 Sequence Number: 5
+
+New Gossip Entry From Server 5 
+Received at 2020/01/27 15:33:40
+ServerID: 0 Sequence Number: 6
+ServerID: 2 Sequence Number: 5
+ServerID: 3 Sequence Number: 5
+ServerID: 4 Sequence Number: 6
+ServerID: 6 Sequence Number: 5
+ServerID: 7 Sequence Number: 5
+ServerID: 8 Sequence Number: 6
+
+New Gossip Entry From Server 8 
+Received at 2020/01/27 15:33:44
+ServerID: 0 Sequence Number: 8
+ServerID: 2 Sequence Number: 7
+ServerID: 3 Sequence Number: 7
+ServerID: 4 Sequence Number: 8
+ServerID: 5 Sequence Number: 7
+ServerID: 6 Sequence Number: 7
+ServerID: 7 Sequence Number: 7
+
+New Gossip Entry From Server 6 
+Received at 2020/01/27 15:33:44
+ServerID: 0 Sequence Number: 8
+ServerID: 2 Sequence Number: 8
+ServerID: 3 Sequence Number: 7
+ServerID: 4 Sequence Number: 8
+ServerID: 5 Sequence Number: 8
+ServerID: 7 Sequence Number: 8
+ServerID: 8 Sequence Number: 8
+
+New Gossip Entry From Server 4 
+Received at 2020/01/27 15:33:46
+ServerID: 0 Sequence Number: 9
+ServerID: 2 Sequence Number: 8
+ServerID: 3 Sequence Number: 8
+ServerID: 5 Sequence Number: 8
+ServerID: 6 Sequence Number: 8
+ServerID: 7 Sequence Number: 8
+ServerID: 8 Sequence Number: 8
+
+New Gossip Entry From Server 5 
+Received at 2020/01/27 15:33:46
+ServerID: 0 Sequence Number: 9
+ServerID: 2 Sequence Number: 8
+ServerID: 3 Sequence Number: 8
+ServerID: 4 Sequence Number: 9
+ServerID: 6 Sequence Number: 8
+ServerID: 7 Sequence Number: 8
+ServerID: 8 Sequence Number: 9
+
+New Gossip Entry From Server 2 
+Received at 2020/01/27 15:33:46
+ServerID: 0 Sequence Number: 9
+ServerID: 3 Sequence Number: 8
+ServerID: 4 Sequence Number: 9
+ServerID: 5 Sequence Number: 9
+ServerID: 6 Sequence Number: 8
+ServerID: 7 Sequence Number: 8
+ServerID: 8 Sequence Number: 9
+
+New Gossip Entry From Server 8 
+Received at 2020/01/27 15:33:48
+ServerID: 0 Sequence Number: 10
+ServerID: 2 Sequence Number: 9
+ServerID: 3 Sequence Number: 9
+ServerID: 4 Sequence Number: 10
+ServerID: 5 Sequence Number: 9
+ServerID: 6 Sequence Number: 9
+ServerID: 7 Sequence Number: 9
+
+New Gossip Entry From Server 2 
+Received at 2020/01/27 15:33:48
+ServerID: 0 Sequence Number: 10
+ServerID: 3 Sequence Number: 9
+ServerID: 4 Sequence Number: 10
+ServerID: 5 Sequence Number: 10
+ServerID: 6 Sequence Number: 9
+ServerID: 7 Sequence Number: 10
+ServerID: 8 Sequence Number: 10
+
+New Gossip Entry From Server 8 
+Received at 2020/01/27 15:33:50
+ServerID: 0 Sequence Number: 11
+ServerID: 2 Sequence Number: 10
+ServerID: 3 Sequence Number: 10
+ServerID: 4 Sequence Number: 11
+ServerID: 5 Sequence Number: 10
+ServerID: 6 Sequence Number: 10
+ServerID: 7 Sequence Number: 10
+
+New Gossip Entry From Server 5 
+Received at 2020/01/27 15:33:50
+ServerID: 0 Sequence Number: 11
+ServerID: 2 Sequence Number: 10
+ServerID: 3 Sequence Number: 10
+ServerID: 4 Sequence Number: 11
+ServerID: 6 Sequence Number: 10
+ServerID: 7 Sequence Number: 10
+ServerID: 8 Sequence Number: 11
+
+New Gossip Entry From Server 7 
+Received at 2020/01/27 15:33:50
+ServerID: 0 Sequence Number: 11
+ServerID: 2 Sequence Number: 10
+ServerID: 3 Sequence Number: 10
+ServerID: 4 Sequence Number: 11
+ServerID: 5 Sequence Number: 11
+ServerID: 6 Sequence Number: 10
+ServerID: 8 Sequence Number: 11
+
+New Gossip Entry From Server 2 
+Received at 2020/01/27 15:33:50
+ServerID: 0 Sequence Number: 11
+ServerID: 3 Sequence Number: 10
+ServerID: 4 Sequence Number: 11
+ServerID: 5 Sequence Number: 11
+ServerID: 6 Sequence Number: 10
+ServerID: 7 Sequence Number: 11
+ServerID: 8 Sequence Number: 11
+
+New Gossip Entry From Server 6 
+Received at 2020/01/27 15:33:50
+ServerID: 0 Sequence Number: 11
+ServerID: 2 Sequence Number: 11
+ServerID: 3 Sequence Number: 10
+ServerID: 4 Sequence Number: 11
+ServerID: 5 Sequence Number: 11
+ServerID: 7 Sequence Number: 11
+ServerID: 8 Sequence Number: 11
+
+New Gossip Entry From Server 3 
+Received at 2020/01/27 15:33:50
+ServerID: 0 Sequence Number: 11
+ServerID: 2 Sequence Number: 11
+ServerID: 4 Sequence Number: 11
+ServerID: 5 Sequence Number: 11
+ServerID: 6 Sequence Number: 11
+ServerID: 7 Sequence Number: 11
+ServerID: 8 Sequence Number: 11
+
+New Gossip Entry From Server 5 
+Received at 2020/01/27 15:33:52
+ServerID: 0 Sequence Number: 12
+ServerID: 2 Sequence Number: 11
+ServerID: 3 Sequence Number: 11
+ServerID: 4 Sequence Number: 12
+ServerID: 6 Sequence Number: 11
+ServerID: 7 Sequence Number: 11
+ServerID: 8 Sequence Number: 12
+
+New Gossip Entry From Server 2 
+Received at 2020/01/27 15:33:58
+ServerID: 0 Sequence Number: 15
+ServerID: 3 Sequence Number: 14
+ServerID: 4 Sequence Number: 15
+ServerID: 5 Sequence Number: 14
+ServerID: 6 Sequence Number: 14
+ServerID: 7 Sequence Number: 14
+ServerID: 8 Sequence Number: 15
+
+New Gossip Entry From Server 7 
+Received at 2020/01/27 15:33:58
+ServerID: 0 Sequence Number: 15
+ServerID: 2 Sequence Number: 14
+ServerID: 3 Sequence Number: 14
+ServerID: 4 Sequence Number: 15
+ServerID: 5 Sequence Number: 14
+ServerID: 6 Sequence Number: 14
+ServerID: 8 Sequence Number: 15
+
+New Gossip Entry From Server 3 
+Received at 2020/01/27 15:33:58
+ServerID: 0 Sequence Number: 15
+ServerID: 2 Sequence Number: 15
+ServerID: 4 Sequence Number: 15
+ServerID: 5 Sequence Number: 15
+ServerID: 6 Sequence Number: 15
+ServerID: 7 Sequence Number: 15
+ServerID: 8 Sequence Number: 15
+
+New Gossip Entry From Server 8 
+Received at 2020/01/27 15:34:00
+ServerID: 0 Sequence Number: 16
+ServerID: 2 Sequence Number: 15
+ServerID: 3 Sequence Number: 15
+ServerID: 4 Sequence Number: 16
+ServerID: 5 Sequence Number: 15
+ServerID: 6 Sequence Number: 15
+ServerID: 7 Sequence Number: 15
+
+New Gossip Entry From Server 8 
+Received at 2020/01/27 15:34:02
+ServerID: 0 Sequence Number: 17
+ServerID: 2 Sequence Number: 16
+ServerID: 3 Sequence Number: 16
+ServerID: 4 Sequence Number: 17
+ServerID: 5 Sequence Number: 16
+ServerID: 6 Sequence Number: 16
+ServerID: 7 Sequence Number: 16
+
+New Gossip Entry From Server 6 
+Received at 2020/01/27 15:34:04
+ServerID: 0 Sequence Number: 18
+ServerID: 2 Sequence Number: 18
+ServerID: 3 Sequence Number: 17
+ServerID: 4 Sequence Number: 18
+ServerID: 5 Sequence Number: 18
+ServerID: 7 Sequence Number: 18
+ServerID: 8 Sequence Number: 18
+
+New Gossip Entry From Server 3 
+Received at 2020/01/27 15:34:04
+ServerID: 0 Sequence Number: 18
+ServerID: 2 Sequence Number: 18
+ServerID: 4 Sequence Number: 18
+ServerID: 5 Sequence Number: 18
+ServerID: 6 Sequence Number: 18
+ServerID: 7 Sequence Number: 18
+ServerID: 8 Sequence Number: 18
+
+New Gossip Entry From Server 7 
+Received at 2020/01/27 15:34:06
+ServerID: 0 Sequence Number: 19
+ServerID: 2 Sequence Number: 18
+ServerID: 3 Sequence Number: 18
+ServerID: 4 Sequence Number: 19
+ServerID: 5 Sequence Number: 19
+ServerID: 6 Sequence Number: 18
+ServerID: 8 Sequence Number: 19
+
+New Gossip Entry From Server 3 
+Received at 2020/01/27 15:34:06
+ServerID: 0 Sequence Number: 19
+ServerID: 2 Sequence Number: 19
+ServerID: 4 Sequence Number: 19
+ServerID: 5 Sequence Number: 19
+ServerID: 6 Sequence Number: 19
+ServerID: 7 Sequence Number: 19
+ServerID: 8 Sequence Number: 19
+
+New Gossip Entry From Server 7 
+Received at 2020/01/27 15:34:08
+ServerID: 0 Sequence Number: 20
+ServerID: 2 Sequence Number: 19
+ServerID: 3 Sequence Number: 19
+ServerID: 4 Sequence Number: 20
+ServerID: 5 Sequence Number: 20
+ServerID: 6 Sequence Number: 19
+ServerID: 8 Sequence Number: 20
+
+New Gossip Entry From Server 2 
+Received at 2020/01/27 15:34:08
+ServerID: 0 Sequence Number: 20
+ServerID: 3 Sequence Number: 19
+ServerID: 4 Sequence Number: 20
+ServerID: 5 Sequence Number: 20
+ServerID: 6 Sequence Number: 20
+ServerID: 7 Sequence Number: 20
+ServerID: 8 Sequence Number: 20
+
+New Gossip Entry From Server 8 
+Received at 2020/01/27 15:34:10
+ServerID: 0 Sequence Number: 21
+ServerID: 2 Sequence Number: 20
+ServerID: 3 Sequence Number: 20
+ServerID: 4 Sequence Number: 21
+ServerID: 5 Sequence Number: 20
+ServerID: 6 Sequence Number: 20
+ServerID: 7 Sequence Number: 20
+
+New Gossip Entry From Server 7 
+Received at 2020/01/27 15:34:10
+ServerID: 0 Sequence Number: 21
+ServerID: 2 Sequence Number: 20
+ServerID: 3 Sequence Number: 20
+ServerID: 4 Sequence Number: 21
+ServerID: 5 Sequence Number: 21
+ServerID: 6 Sequence Number: 20
+ServerID: 8 Sequence Number: 21
+
+New Gossip Entry From Server 2 
+Received at 2020/01/27 15:34:10
+ServerID: 0 Sequence Number: 21
+ServerID: 3 Sequence Number: 20
+ServerID: 4 Sequence Number: 21
+ServerID: 5 Sequence Number: 21
+ServerID: 6 Sequence Number: 21
+ServerID: 7 Sequence Number: 21
+ServerID: 8 Sequence Number: 21
+
+New Gossip Entry From Server 4 
+Received at 2020/01/27 15:34:12
+ServerID: 0 Sequence Number: 22
+ServerID: 2 Sequence Number: 21
+ServerID: 3 Sequence Number: 21
+ServerID: 5 Sequence Number: 21
+ServerID: 6 Sequence Number: 21
+ServerID: 7 Sequence Number: 21
+ServerID: 8 Sequence Number: 21
+
+New Gossip Entry From Server 8 
+Received at 2020/01/27 15:34:12
+ServerID: 0 Sequence Number: 22
+ServerID: 2 Sequence Number: 21
+ServerID: 3 Sequence Number: 21
+ServerID: 4 Sequence Number: 22
+ServerID: 5 Sequence Number: 21
+ServerID: 6 Sequence Number: 21
+ServerID: 7 Sequence Number: 21
+
+New Gossip Entry From Server 7 
+Received at 2020/01/27 15:34:12
+ServerID: 0 Sequence Number: 22
+ServerID: 2 Sequence Number: 21
+ServerID: 3 Sequence Number: 21
+ServerID: 4 Sequence Number: 22
+ServerID: 5 Sequence Number: 21
+ServerID: 6 Sequence Number: 21
+ServerID: 8 Sequence Number: 22
+
+New Gossip Entry From Server 2 
+Received at 2020/01/27 15:34:12
+ServerID: 0 Sequence Number: 22
+ServerID: 3 Sequence Number: 21
+ServerID: 4 Sequence Number: 22
+ServerID: 5 Sequence Number: 21
+ServerID: 6 Sequence Number: 22
+ServerID: 7 Sequence Number: 22
+ServerID: 8 Sequence Number: 22
+
+New Gossip Entry From Server 4 
+Received at 2020/01/27 15:34:14
+ServerID: 0 Sequence Number: 23
+ServerID: 2 Sequence Number: 22
+ServerID: 3 Sequence Number: 22
+ServerID: 5 Sequence Number: 21
+ServerID: 6 Sequence Number: 22
+ServerID: 7 Sequence Number: 22
+ServerID: 8 Sequence Number: 22
+
+New Gossip Entry From Server 2 
+Received at 2020/01/27 15:34:14
+ServerID: 0 Sequence Number: 23
+ServerID: 3 Sequence Number: 22
+ServerID: 4 Sequence Number: 23
+ServerID: 5 Sequence Number: 21
+ServerID: 6 Sequence Number: 23
+ServerID: 7 Sequence Number: 23
+ServerID: 8 Sequence Number: 23
+
+New Gossip Entry From Server 4 
+Received at 2020/01/27 15:34:16
+ServerID: 0 Sequence Number: 24
+ServerID: 2 Sequence Number: 23
+ServerID: 3 Sequence Number: 23
+ServerID: 5 Sequence Number: 21
+ServerID: 6 Sequence Number: 23
+ServerID: 7 Sequence Number: 23
+ServerID: 8 Sequence Number: 23
+
+New Gossip Entry From Server 7 
+Received at 2020/01/27 15:34:16
+ServerID: 0 Sequence Number: 24
+ServerID: 2 Sequence Number: 23
+ServerID: 3 Sequence Number: 23
+ServerID: 4 Sequence Number: 24
+ServerID: 5 Sequence Number: 21
+ServerID: 6 Sequence Number: 23
+ServerID: 8 Sequence Number: 24
+
+New Gossip Entry From Server 4 
+Received at 2020/01/27 15:34:18
+ServerID: 0 Sequence Number: 25
+ServerID: 2 Sequence Number: 24
+ServerID: 3 Sequence Number: 24
+ServerID: 5 Sequence Number: 21
+ServerID: 6 Sequence Number: 24
+ServerID: 7 Sequence Number: 24
+ServerID: 8 Sequence Number: 24
+
+New Gossip Entry From Server 7 
+Received at 2020/01/27 15:34:18
+ServerID: 0 Sequence Number: 25
+ServerID: 2 Sequence Number: 24
+ServerID: 3 Sequence Number: 24
+ServerID: 4 Sequence Number: 25
+ServerID: 5 Sequence Number: 21
+ServerID: 6 Sequence Number: 24
+ServerID: 8 Sequence Number: 25
+
+New Gossip Entry From Server 6 
+Received at 2020/01/27 15:34:18
+ServerID: 0 Sequence Number: 25
+ServerID: 2 Sequence Number: 24
+ServerID: 3 Sequence Number: 24
+ServerID: 4 Sequence Number: 25
+ServerID: 5 Sequence Number: 21
+ServerID: 7 Sequence Number: 25
+ServerID: 8 Sequence Number: 25
+
+New Gossip Entry From Server 2 
+Received at 2020/01/27 15:34:18
+ServerID: 0 Sequence Number: 25
+ServerID: 3 Sequence Number: 24
+ServerID: 4 Sequence Number: 25
+ServerID: 5 Sequence Number: 21
+ServerID: 6 Sequence Number: 25
+ServerID: 7 Sequence Number: 25
+ServerID: 8 Sequence Number: 25
+
+New Gossip Entry From Server 2 
+Received at 2020/01/27 15:34:20
+ServerID: 0 Sequence Number: 26
+ServerID: 3 Sequence Number: 25
+ServerID: 4 Sequence Number: 26
+ServerID: 6 Sequence Number: 26
+ServerID: 7 Sequence Number: 26
+ServerID: 8 Sequence Number: 26
+
+New Gossip Entry From Server 3 
+Received at 2020/01/27 15:34:20
+ServerID: 0 Sequence Number: 26
+ServerID: 2 Sequence Number: 26
+ServerID: 4 Sequence Number: 26
+ServerID: 6 Sequence Number: 26
+ServerID: 7 Sequence Number: 26
+ServerID: 8 Sequence Number: 26
+
+New Gossip Entry From Server 3 
+Received at 2020/01/27 15:34:22
+ServerID: 0 Sequence Number: 27
+ServerID: 2 Sequence Number: 27
+ServerID: 4 Sequence Number: 27
+ServerID: 6 Sequence Number: 27
+ServerID: 7 Sequence Number: 27
+ServerID: 8 Sequence Number: 26
+
+New Gossip Entry From Server 6 
+Received at 2020/01/27 15:34:24
+ServerID: 0 Sequence Number: 28
+ServerID: 2 Sequence Number: 27
+ServerID: 3 Sequence Number: 27
+ServerID: 4 Sequence Number: 28
+ServerID: 7 Sequence Number: 28
+ServerID: 8 Sequence Number: 26
+
+New Gossip Entry From Server 3 
+Received at 2020/01/27 15:34:24
+ServerID: 0 Sequence Number: 28
+ServerID: 2 Sequence Number: 27
+ServerID: 4 Sequence Number: 28
+ServerID: 6 Sequence Number: 28
+ServerID: 7 Sequence Number: 28
+ServerID: 8 Sequence Number: 26
+
+New Gossip Entry From Server 2 
+Received at 2020/01/27 15:34:24
+ServerID: 0 Sequence Number: 28
+ServerID: 3 Sequence Number: 27
+ServerID: 4 Sequence Number: 28
+ServerID: 6 Sequence Number: 27
+ServerID: 7 Sequence Number: 28
+ServerID: 8 Sequence Number: 26
+
+New Gossip Entry From Server 6 
+Received at 2020/01/27 15:34:26
+ServerID: 0 Sequence Number: 29
+ServerID: 2 Sequence Number: 28
+ServerID: 3 Sequence Number: 28
+ServerID: 4 Sequence Number: 29
+ServerID: 7 Sequence Number: 29
+ServerID: 8 Sequence Number: 26
+
+New Gossip Entry From Server 4 
+Received at 2020/01/27 15:34:28
+ServerID: 0 Sequence Number: 30
+ServerID: 2 Sequence Number: 29
+ServerID: 3 Sequence Number: 29
+ServerID: 6 Sequence Number: 29
+ServerID: 7 Sequence Number: 29
+ServerID: 8 Sequence Number: 26
+
+New Gossip Entry From Server 3 
+Received at 2020/01/27 15:34:28
+ServerID: 0 Sequence Number: 30
+ServerID: 2 Sequence Number: 29
+ServerID: 4 Sequence Number: 30
+ServerID: 6 Sequence Number: 30
+ServerID: 7 Sequence Number: 30
+ServerID: 8 Sequence Number: 26
+
+New Gossip Entry From Server 3 
+Received at 2020/01/27 15:34:30
+ServerID: 0 Sequence Number: 31
+ServerID: 2 Sequence Number: 30
+ServerID: 4 Sequence Number: 31
+ServerID: 6 Sequence Number: 30
+ServerID: 7 Sequence Number: 31
+
+New Gossip Entry From Server 6 
+Received at 2020/01/27 15:34:31
+ServerID: 0 Sequence Number: 31
+ServerID: 2 Sequence Number: 30
+ServerID: 3 Sequence Number: 30
+ServerID: 4 Sequence Number: 31
+ServerID: 7 Sequence Number: 30
+
+New Gossip Entry From Server 4 
+Received at 2020/01/27 15:34:32
+ServerID: 0 Sequence Number: 32
+ServerID: 2 Sequence Number: 31
+ServerID: 3 Sequence Number: 31
+ServerID: 6 Sequence Number: 31
+ServerID: 7 Sequence Number: 31
+
+New Gossip Entry From Server 7 
+Received at 2020/01/27 15:34:32
+ServerID: 0 Sequence Number: 32
+ServerID: 2 Sequence Number: 31
+ServerID: 3 Sequence Number: 31
+ServerID: 4 Sequence Number: 32
+ServerID: 6 Sequence Number: 31
+
+New Gossip Entry From Server 3 
+Received at 2020/01/27 15:34:32
+ServerID: 0 Sequence Number: 32
+ServerID: 2 Sequence Number: 31
+ServerID: 4 Sequence Number: 32
+ServerID: 6 Sequence Number: 32
+ServerID: 7 Sequence Number: 32
+
+New Gossip Entry From Server 2 
+Received at 2020/01/27 15:34:32
+ServerID: 0 Sequence Number: 32
+ServerID: 3 Sequence Number: 32
+ServerID: 4 Sequence Number: 32
+ServerID: 6 Sequence Number: 32
+ServerID: 7 Sequence Number: 32
+
+New Gossip Entry From Server 7 
+Received at 2020/01/27 15:34:34
+ServerID: 0 Sequence Number: 33
+ServerID: 2 Sequence Number: 32
+ServerID: 3 Sequence Number: 32
+ServerID: 4 Sequence Number: 33
+ServerID: 6 Sequence Number: 32
+
+ getting gossip from curl for server 2:
+
+New Gossip Entry From Server 0 
+Received at 2020/01/27 15:33:42
+ServerID: 2 Sequence Number: 6
+ServerID: 3 Sequence Number: 6
+ServerID: 4 Sequence Number: 6
+ServerID: 5 Sequence Number: 6
+ServerID: 6 Sequence Number: 6
+ServerID: 7 Sequence Number: 6
+ServerID: 8 Sequence Number: 6
+
+New Gossip Entry From Server 6 
+Received at 2020/01/27 15:33:43
+ServerID: 0 Sequence Number: 7
+ServerID: 2 Sequence Number: 7
+ServerID: 3 Sequence Number: 6
+ServerID: 4 Sequence Number: 7
+ServerID: 5 Sequence Number: 7
+ServerID: 7 Sequence Number: 7
+ServerID: 8 Sequence Number: 7
+
+New Gossip Entry From Server 3 
+Received at 2020/01/27 15:33:43
+ServerID: 0 Sequence Number: 7
+ServerID: 2 Sequence Number: 7
+ServerID: 4 Sequence Number: 7
+ServerID: 5 Sequence Number: 7
+ServerID: 6 Sequence Number: 7
+ServerID: 7 Sequence Number: 7
+ServerID: 8 Sequence Number: 7
+
+New Gossip Entry From Server 4 
+Received at 2020/01/27 15:33:44
+ServerID: 0 Sequence Number: 8
+ServerID: 2 Sequence Number: 7
+ServerID: 3 Sequence Number: 7
+ServerID: 5 Sequence Number: 7
+ServerID: 6 Sequence Number: 7
+ServerID: 7 Sequence Number: 7
+ServerID: 8 Sequence Number: 7
+
+New Gossip Entry From Server 3 
+Received at 2020/01/27 15:33:44
+ServerID: 0 Sequence Number: 8
+ServerID: 2 Sequence Number: 8
+ServerID: 4 Sequence Number: 8
+ServerID: 5 Sequence Number: 8
+ServerID: 6 Sequence Number: 8
+ServerID: 7 Sequence Number: 8
+ServerID: 8 Sequence Number: 8
+
+New Gossip Entry From Server 6 
+Received at 2020/01/27 15:33:48
+ServerID: 0 Sequence Number: 10
+ServerID: 2 Sequence Number: 10
+ServerID: 3 Sequence Number: 9
+ServerID: 4 Sequence Number: 10
+ServerID: 5 Sequence Number: 10
+ServerID: 7 Sequence Number: 10
+ServerID: 8 Sequence Number: 10
+
+New Gossip Entry From Server 0 
+Received at 2020/01/27 15:33:52
+ServerID: 2 Sequence Number: 11
+ServerID: 3 Sequence Number: 11
+ServerID: 4 Sequence Number: 11
+ServerID: 5 Sequence Number: 11
+ServerID: 6 Sequence Number: 11
+ServerID: 7 Sequence Number: 11
+ServerID: 8 Sequence Number: 11
+
+New Gossip Entry From Server 7 
+Received at 2020/01/27 15:33:52
+ServerID: 0 Sequence Number: 12
+ServerID: 2 Sequence Number: 11
+ServerID: 3 Sequence Number: 11
+ServerID: 4 Sequence Number: 12
+ServerID: 5 Sequence Number: 12
+ServerID: 6 Sequence Number: 11
+ServerID: 8 Sequence Number: 12
+
+New Gossip Entry From Server 6 
+Received at 2020/01/27 15:33:52
+ServerID: 0 Sequence Number: 12
+ServerID: 2 Sequence Number: 12
+ServerID: 3 Sequence Number: 11
+ServerID: 4 Sequence Number: 12
+ServerID: 5 Sequence Number: 12
+ServerID: 7 Sequence Number: 12
+ServerID: 8 Sequence Number: 12
+
+New Gossip Entry From Server 4 
+Received at 2020/01/27 15:33:54
+ServerID: 0 Sequence Number: 13
+ServerID: 2 Sequence Number: 12
+ServerID: 3 Sequence Number: 12
+ServerID: 5 Sequence Number: 12
+ServerID: 6 Sequence Number: 12
+ServerID: 7 Sequence Number: 12
+ServerID: 8 Sequence Number: 12
+
+New Gossip Entry From Server 4 
+Received at 2020/01/27 15:33:56
+ServerID: 0 Sequence Number: 14
+ServerID: 2 Sequence Number: 13
+ServerID: 3 Sequence Number: 13
+ServerID: 5 Sequence Number: 13
+ServerID: 6 Sequence Number: 13
+ServerID: 7 Sequence Number: 13
+ServerID: 8 Sequence Number: 13
+
+New Gossip Entry From Server 8 
+Received at 2020/01/27 15:33:56
+ServerID: 0 Sequence Number: 14
+ServerID: 2 Sequence Number: 13
+ServerID: 3 Sequence Number: 13
+ServerID: 4 Sequence Number: 14
+ServerID: 5 Sequence Number: 13
+ServerID: 6 Sequence Number: 13
+ServerID: 7 Sequence Number: 13
+
+New Gossip Entry From Server 3 
+Received at 2020/01/27 15:33:56
+ServerID: 0 Sequence Number: 14
+ServerID: 2 Sequence Number: 14
+ServerID: 4 Sequence Number: 14
+ServerID: 5 Sequence Number: 14
+ServerID: 6 Sequence Number: 14
+ServerID: 7 Sequence Number: 14
+ServerID: 8 Sequence Number: 14
+
+New Gossip Entry From Server 7 
+Received at 2020/01/27 15:34:00
+ServerID: 0 Sequence Number: 16
+ServerID: 2 Sequence Number: 15
+ServerID: 3 Sequence Number: 15
+ServerID: 4 Sequence Number: 16
+ServerID: 5 Sequence Number: 16
+ServerID: 6 Sequence Number: 15
+ServerID: 8 Sequence Number: 16
+
+New Gossip Entry From Server 0 
+Received at 2020/01/27 15:34:02
+ServerID: 2 Sequence Number: 16
+ServerID: 3 Sequence Number: 16
+ServerID: 4 Sequence Number: 16
+ServerID: 5 Sequence Number: 16
+ServerID: 6 Sequence Number: 16
+ServerID: 7 Sequence Number: 16
+ServerID: 8 Sequence Number: 16
+
+New Gossip Entry From Server 5 
+Received at 2020/01/27 15:34:02
+ServerID: 0 Sequence Number: 17
+ServerID: 2 Sequence Number: 16
+ServerID: 3 Sequence Number: 16
+ServerID: 4 Sequence Number: 17
+ServerID: 6 Sequence Number: 16
+ServerID: 7 Sequence Number: 16
+ServerID: 8 Sequence Number: 17
+
+New Gossip Entry From Server 6 
+Received at 2020/01/27 15:34:02
+ServerID: 0 Sequence Number: 17
+ServerID: 2 Sequence Number: 17
+ServerID: 3 Sequence Number: 16
+ServerID: 4 Sequence Number: 17
+ServerID: 5 Sequence Number: 17
+ServerID: 7 Sequence Number: 17
+ServerID: 8 Sequence Number: 17
+
+New Gossip Entry From Server 3 
+Received at 2020/01/27 15:34:02
+ServerID: 0 Sequence Number: 17
+ServerID: 2 Sequence Number: 17
+ServerID: 4 Sequence Number: 17
+ServerID: 5 Sequence Number: 17
+ServerID: 6 Sequence Number: 17
+ServerID: 7 Sequence Number: 17
+ServerID: 8 Sequence Number: 17
+
+New Gossip Entry From Server 7 
+Received at 2020/01/27 15:34:04
+ServerID: 0 Sequence Number: 18
+ServerID: 2 Sequence Number: 17
+ServerID: 3 Sequence Number: 17
+ServerID: 4 Sequence Number: 18
+ServerID: 5 Sequence Number: 18
+ServerID: 6 Sequence Number: 17
+ServerID: 8 Sequence Number: 18
+
+New Gossip Entry From Server 5 
+Received at 2020/01/27 15:34:06
+ServerID: 0 Sequence Number: 19
+ServerID: 2 Sequence Number: 18
+ServerID: 3 Sequence Number: 18
+ServerID: 4 Sequence Number: 19
+ServerID: 6 Sequence Number: 18
+ServerID: 7 Sequence Number: 18
+ServerID: 8 Sequence Number: 19
+
+New Gossip Entry From Server 4 
+Received at 2020/01/27 15:34:10
+ServerID: 0 Sequence Number: 21
+ServerID: 2 Sequence Number: 20
+ServerID: 3 Sequence Number: 20
+ServerID: 5 Sequence Number: 20
+ServerID: 6 Sequence Number: 20
+ServerID: 7 Sequence Number: 20
+ServerID: 8 Sequence Number: 20
+
+New Gossip Entry From Server 0 
+Received at 2020/01/27 15:34:12
+ServerID: 2 Sequence Number: 21
+ServerID: 3 Sequence Number: 21
+ServerID: 4 Sequence Number: 21
+ServerID: 5 Sequence Number: 21
+ServerID: 6 Sequence Number: 21
+ServerID: 7 Sequence Number: 21
+ServerID: 8 Sequence Number: 21
+
+New Gossip Entry From Server 6 
+Received at 2020/01/27 15:34:12
+ServerID: 0 Sequence Number: 22
+ServerID: 2 Sequence Number: 21
+ServerID: 3 Sequence Number: 21
+ServerID: 4 Sequence Number: 22
+ServerID: 5 Sequence Number: 21
+ServerID: 7 Sequence Number: 21
+ServerID: 8 Sequence Number: 22
+
+New Gossip Entry From Server 8 
+Received at 2020/01/27 15:34:14
+ServerID: 0 Sequence Number: 23
+ServerID: 2 Sequence Number: 22
+ServerID: 3 Sequence Number: 22
+ServerID: 4 Sequence Number: 23
+ServerID: 5 Sequence Number: 21
+ServerID: 6 Sequence Number: 22
+ServerID: 7 Sequence Number: 22
+
+New Gossip Entry From Server 6 
+Received at 2020/01/27 15:34:16
+ServerID: 0 Sequence Number: 24
+ServerID: 2 Sequence Number: 23
+ServerID: 3 Sequence Number: 23
+ServerID: 4 Sequence Number: 24
+ServerID: 5 Sequence Number: 21
+ServerID: 7 Sequence Number: 24
+ServerID: 8 Sequence Number: 24
+
+New Gossip Entry From Server 0 
+Received at 2020/01/27 15:34:18
+ServerID: 2 Sequence Number: 24
+ServerID: 3 Sequence Number: 24
+ServerID: 4 Sequence Number: 24
+ServerID: 5 Sequence Number: 21
+ServerID: 6 Sequence Number: 24
+ServerID: 7 Sequence Number: 24
+ServerID: 8 Sequence Number: 24
+
+New Gossip Entry From Server 3 
+Received at 2020/01/27 15:34:18
+ServerID: 0 Sequence Number: 25
+ServerID: 2 Sequence Number: 25
+ServerID: 4 Sequence Number: 25
+ServerID: 5 Sequence Number: 21
+ServerID: 6 Sequence Number: 25
+ServerID: 7 Sequence Number: 25
+ServerID: 8 Sequence Number: 25
+
+New Gossip Entry From Server 4 
+Received at 2020/01/27 15:34:20
+ServerID: 0 Sequence Number: 26
+ServerID: 2 Sequence Number: 25
+ServerID: 3 Sequence Number: 25
+ServerID: 5 Sequence Number: 21
+ServerID: 6 Sequence Number: 25
+ServerID: 7 Sequence Number: 25
+ServerID: 8 Sequence Number: 25
+
+New Gossip Entry From Server 6 
+Received at 2020/01/27 15:34:22
+ServerID: 0 Sequence Number: 27
+ServerID: 2 Sequence Number: 26
+ServerID: 3 Sequence Number: 26
+ServerID: 4 Sequence Number: 27
+ServerID: 7 Sequence Number: 26
+ServerID: 8 Sequence Number: 26
+
+New Gossip Entry From Server 4 
+Received at 2020/01/27 15:34:24
+ServerID: 0 Sequence Number: 28
+ServerID: 2 Sequence Number: 27
+ServerID: 3 Sequence Number: 27
+ServerID: 6 Sequence Number: 27
+ServerID: 7 Sequence Number: 27
+ServerID: 8 Sequence Number: 26
+
+New Gossip Entry From Server 7 
+Received at 2020/01/27 15:34:26
+ServerID: 0 Sequence Number: 29
+ServerID: 2 Sequence Number: 28
+ServerID: 3 Sequence Number: 28
+ServerID: 4 Sequence Number: 29
+ServerID: 6 Sequence Number: 28
+ServerID: 8 Sequence Number: 26
+
+New Gossip Entry From Server 4 
+Received at 2020/01/27 15:34:30
+ServerID: 0 Sequence Number: 31
+ServerID: 2 Sequence Number: 30
+ServerID: 3 Sequence Number: 30
+ServerID: 6 Sequence Number: 30
+ServerID: 7 Sequence Number: 30
+ServerID: 8 Sequence Number: 26
+
+New Gossip Entry From Server 7 
+Received at 2020/01/27 15:34:30
+ServerID: 0 Sequence Number: 31
+ServerID: 2 Sequence Number: 30
+ServerID: 3 Sequence Number: 30
+ServerID: 4 Sequence Number: 31
+ServerID: 6 Sequence Number: 30
+
+New Gossip Entry From Server 0 
+Received at 2020/01/27 15:34:34
+ServerID: 2 Sequence Number: 32
+ServerID: 3 Sequence Number: 32
+ServerID: 4 Sequence Number: 32
+ServerID: 6 Sequence Number: 32
+ServerID: 7 Sequence Number: 32
+
+New Gossip Entry From Server 4 
+Received at 2020/01/27 15:34:34
+ServerID: 0 Sequence Number: 33
+ServerID: 2 Sequence Number: 32
+ServerID: 3 Sequence Number: 32
+ServerID: 6 Sequence Number: 32
+ServerID: 7 Sequence Number: 32
+
+New Gossip Entry From Server 3 
+Received at 2020/01/27 15:34:34
+ServerID: 0 Sequence Number: 33
+ServerID: 2 Sequence Number: 32
+ServerID: 4 Sequence Number: 33
+ServerID: 6 Sequence Number: 33
+ServerID: 7 Sequence Number: 33
+
+ getting gossip from curl for server 3:
+
+New Gossip Entry From Server 0 
+Received at 2020/01/27 15:33:32
+ServerID: 2 Sequence Number: 1
+ServerID: 3 Sequence Number: 1
+ServerID: 4 Sequence Number: 1
+ServerID: 5 Sequence Number: 1
+ServerID: 6 Sequence Number: 1
+ServerID: 7 Sequence Number: 1
+ServerID: 8 Sequence Number: 1
+
+New Gossip Entry From Server 5 
+Received at 2020/01/27 15:33:34
+ServerID: 0 Sequence Number: 3
+ServerID: 2 Sequence Number: 2
+ServerID: 3 Sequence Number: 2
+ServerID: 4 Sequence Number: 3
+ServerID: 6 Sequence Number: 2
+ServerID: 7 Sequence Number: 2
+ServerID: 8 Sequence Number: 3
+
+New Gossip Entry From Server 6 
+Received at 2020/01/27 15:33:34
+ServerID: 0 Sequence Number: 3
+ServerID: 2 Sequence Number: 3
+ServerID: 3 Sequence Number: 2
+ServerID: 4 Sequence Number: 3
+ServerID: 5 Sequence Number: 3
+ServerID: 7 Sequence Number: 3
+ServerID: 8 Sequence Number: 3
+
+New Gossip Entry From Server 8 
+Received at 2020/01/27 15:33:36
+ServerID: 0 Sequence Number: 4
+ServerID: 2 Sequence Number: 3
+ServerID: 3 Sequence Number: 3
+ServerID: 4 Sequence Number: 4
+ServerID: 5 Sequence Number: 3
+ServerID: 6 Sequence Number: 3
+ServerID: 7 Sequence Number: 3
+
+New Gossip Entry From Server 5 
+Received at 2020/01/27 15:33:36
+ServerID: 0 Sequence Number: 4
+ServerID: 2 Sequence Number: 3
+ServerID: 3 Sequence Number: 3
+ServerID: 4 Sequence Number: 4
+ServerID: 6 Sequence Number: 3
+ServerID: 7 Sequence Number: 3
+ServerID: 8 Sequence Number: 4
+
+New Gossip Entry From Server 6 
+Received at 2020/01/27 15:33:40
+ServerID: 0 Sequence Number: 6
+ServerID: 2 Sequence Number: 6
+ServerID: 3 Sequence Number: 5
+ServerID: 4 Sequence Number: 6
+ServerID: 5 Sequence Number: 6
+ServerID: 7 Sequence Number: 6
+ServerID: 8 Sequence Number: 6
+
+New Gossip Entry From Server 4 
+Received at 2020/01/27 15:33:42
+ServerID: 0 Sequence Number: 7
+ServerID: 2 Sequence Number: 6
+ServerID: 3 Sequence Number: 6
+ServerID: 5 Sequence Number: 6
+ServerID: 6 Sequence Number: 6
+ServerID: 7 Sequence Number: 6
+ServerID: 8 Sequence Number: 6
+
+New Gossip Entry From Server 0 
+Received at 2020/01/27 15:33:44
+ServerID: 2 Sequence Number: 7
+ServerID: 3 Sequence Number: 7
+ServerID: 4 Sequence Number: 7
+ServerID: 5 Sequence Number: 7
+ServerID: 6 Sequence Number: 7
+ServerID: 7 Sequence Number: 7
+ServerID: 8 Sequence Number: 7
+
+New Gossip Entry From Server 2 
+Received at 2020/01/27 15:33:44
+ServerID: 0 Sequence Number: 8
+ServerID: 3 Sequence Number: 7
+ServerID: 4 Sequence Number: 8
+ServerID: 5 Sequence Number: 8
+ServerID: 6 Sequence Number: 7
+ServerID: 7 Sequence Number: 8
+ServerID: 8 Sequence Number: 8
+
+New Gossip Entry From Server 7 
+Received at 2020/01/27 15:33:46
+ServerID: 0 Sequence Number: 9
+ServerID: 2 Sequence Number: 8
+ServerID: 3 Sequence Number: 8
+ServerID: 4 Sequence Number: 9
+ServerID: 5 Sequence Number: 9
+ServerID: 6 Sequence Number: 8
+ServerID: 8 Sequence Number: 9
+
+New Gossip Entry From Server 4 
+Received at 2020/01/27 15:33:48
+ServerID: 0 Sequence Number: 10
+ServerID: 2 Sequence Number: 9
+ServerID: 3 Sequence Number: 9
+ServerID: 5 Sequence Number: 9
+ServerID: 6 Sequence Number: 9
+ServerID: 7 Sequence Number: 9
+ServerID: 8 Sequence Number: 9
+
+New Gossip Entry From Server 0 
+Received at 2020/01/27 15:33:50
+ServerID: 2 Sequence Number: 10
+ServerID: 3 Sequence Number: 10
+ServerID: 4 Sequence Number: 10
+ServerID: 5 Sequence Number: 10
+ServerID: 6 Sequence Number: 10
+ServerID: 7 Sequence Number: 10
+ServerID: 8 Sequence Number: 10
+
+New Gossip Entry From Server 4 
+Received at 2020/01/27 15:33:50
+ServerID: 0 Sequence Number: 11
+ServerID: 2 Sequence Number: 10
+ServerID: 3 Sequence Number: 10
+ServerID: 5 Sequence Number: 10
+ServerID: 6 Sequence Number: 10
+ServerID: 7 Sequence Number: 10
+ServerID: 8 Sequence Number: 10
+
+New Gossip Entry From Server 7 
+Received at 2020/01/27 15:33:54
+ServerID: 0 Sequence Number: 13
+ServerID: 2 Sequence Number: 12
+ServerID: 3 Sequence Number: 12
+ServerID: 4 Sequence Number: 13
+ServerID: 5 Sequence Number: 13
+ServerID: 6 Sequence Number: 12
+ServerID: 8 Sequence Number: 13
+
+New Gossip Entry From Server 7 
+Received at 2020/01/27 15:33:56
+ServerID: 0 Sequence Number: 14
+ServerID: 2 Sequence Number: 13
+ServerID: 3 Sequence Number: 13
+ServerID: 4 Sequence Number: 14
+ServerID: 5 Sequence Number: 14
+ServerID: 6 Sequence Number: 13
+ServerID: 8 Sequence Number: 14
+
+New Gossip Entry From Server 2 
+Received at 2020/01/27 15:33:56
+ServerID: 0 Sequence Number: 14
+ServerID: 3 Sequence Number: 13
+ServerID: 4 Sequence Number: 14
+ServerID: 5 Sequence Number: 14
+ServerID: 6 Sequence Number: 13
+ServerID: 7 Sequence Number: 14
+ServerID: 8 Sequence Number: 14
+
+New Gossip Entry From Server 5 
+Received at 2020/01/27 15:33:58
+ServerID: 0 Sequence Number: 15
+ServerID: 2 Sequence Number: 14
+ServerID: 3 Sequence Number: 14
+ServerID: 4 Sequence Number: 15
+ServerID: 6 Sequence Number: 14
+ServerID: 7 Sequence Number: 14
+ServerID: 8 Sequence Number: 14
+
+New Gossip Entry From Server 4 
+Received at 2020/01/27 15:34:02
+ServerID: 0 Sequence Number: 17
+ServerID: 2 Sequence Number: 16
+ServerID: 3 Sequence Number: 16
+ServerID: 5 Sequence Number: 16
+ServerID: 6 Sequence Number: 16
+ServerID: 7 Sequence Number: 16
+ServerID: 8 Sequence Number: 16
+
+New Gossip Entry From Server 2 
+Received at 2020/01/27 15:34:02
+ServerID: 0 Sequence Number: 17
+ServerID: 3 Sequence Number: 16
+ServerID: 4 Sequence Number: 17
+ServerID: 5 Sequence Number: 17
+ServerID: 6 Sequence Number: 16
+ServerID: 7 Sequence Number: 17
+ServerID: 8 Sequence Number: 17
+
+New Gossip Entry From Server 8 
+Received at 2020/01/27 15:34:06
+ServerID: 0 Sequence Number: 19
+ServerID: 2 Sequence Number: 18
+ServerID: 3 Sequence Number: 18
+ServerID: 4 Sequence Number: 19
+ServerID: 5 Sequence Number: 18
+ServerID: 6 Sequence Number: 18
+ServerID: 7 Sequence Number: 18
+
+New Gossip Entry From Server 0 
+Received at 2020/01/27 15:34:08
+ServerID: 2 Sequence Number: 19
+ServerID: 3 Sequence Number: 19
+ServerID: 4 Sequence Number: 19
+ServerID: 5 Sequence Number: 19
+ServerID: 6 Sequence Number: 19
+ServerID: 7 Sequence Number: 19
+ServerID: 8 Sequence Number: 19
+
+New Gossip Entry From Server 5 
+Received at 2020/01/27 15:34:08
+ServerID: 0 Sequence Number: 20
+ServerID: 2 Sequence Number: 19
+ServerID: 3 Sequence Number: 19
+ServerID: 4 Sequence Number: 20
+ServerID: 6 Sequence Number: 19
+ServerID: 7 Sequence Number: 19
+ServerID: 8 Sequence Number: 20
+
+New Gossip Entry From Server 0 
+Received at 2020/01/27 15:34:10
+ServerID: 2 Sequence Number: 20
+ServerID: 3 Sequence Number: 20
+ServerID: 4 Sequence Number: 20
+ServerID: 5 Sequence Number: 20
+ServerID: 6 Sequence Number: 20
+ServerID: 7 Sequence Number: 20
+ServerID: 8 Sequence Number: 20
+
+New Gossip Entry From Server 5 
+Received at 2020/01/27 15:34:10
+ServerID: 0 Sequence Number: 21
+ServerID: 2 Sequence Number: 20
+ServerID: 3 Sequence Number: 20
+ServerID: 4 Sequence Number: 21
+ServerID: 6 Sequence Number: 20
+ServerID: 7 Sequence Number: 20
+ServerID: 8 Sequence Number: 21
+
+New Gossip Entry From Server 8 
+Received at 2020/01/27 15:34:16
+ServerID: 0 Sequence Number: 24
+ServerID: 2 Sequence Number: 23
+ServerID: 3 Sequence Number: 23
+ServerID: 4 Sequence Number: 24
+ServerID: 5 Sequence Number: 21
+ServerID: 6 Sequence Number: 23
+ServerID: 7 Sequence Number: 23
+
+New Gossip Entry From Server 4 
+Received at 2020/01/27 15:34:22
+ServerID: 0 Sequence Number: 27
+ServerID: 2 Sequence Number: 26
+ServerID: 3 Sequence Number: 26
+ServerID: 6 Sequence Number: 26
+ServerID: 7 Sequence Number: 26
+ServerID: 8 Sequence Number: 26
+
+New Gossip Entry From Server 2 
+Received at 2020/01/27 15:34:22
+ServerID: 0 Sequence Number: 27
+ServerID: 3 Sequence Number: 26
+ServerID: 4 Sequence Number: 27
+ServerID: 6 Sequence Number: 27
+ServerID: 7 Sequence Number: 27
+ServerID: 8 Sequence Number: 26
+
+New Gossip Entry From Server 7 
+Received at 2020/01/27 15:34:24
+ServerID: 0 Sequence Number: 28
+ServerID: 2 Sequence Number: 27
+ServerID: 3 Sequence Number: 27
+ServerID: 4 Sequence Number: 28
+ServerID: 6 Sequence Number: 27
+ServerID: 8 Sequence Number: 26
+
+New Gossip Entry From Server 4 
+Received at 2020/01/27 15:34:26
+ServerID: 0 Sequence Number: 29
+ServerID: 2 Sequence Number: 28
+ServerID: 3 Sequence Number: 28
+ServerID: 6 Sequence Number: 28
+ServerID: 7 Sequence Number: 28
+ServerID: 8 Sequence Number: 26
+
+New Gossip Entry From Server 7 
+Received at 2020/01/27 15:34:28
+ServerID: 0 Sequence Number: 30
+ServerID: 2 Sequence Number: 29
+ServerID: 3 Sequence Number: 29
+ServerID: 4 Sequence Number: 30
+ServerID: 6 Sequence Number: 29
+ServerID: 8 Sequence Number: 26
+
+New Gossip Entry From Server 6 
+Received at 2020/01/27 15:34:28
+ServerID: 0 Sequence Number: 30
+ServerID: 2 Sequence Number: 29
+ServerID: 3 Sequence Number: 29
+ServerID: 4 Sequence Number: 30
+ServerID: 7 Sequence Number: 30
+ServerID: 8 Sequence Number: 26
+
+New Gossip Entry From Server 0 
+Received at 2020/01/27 15:34:30
+ServerID: 2 Sequence Number: 30
+ServerID: 3 Sequence Number: 30
+ServerID: 4 Sequence Number: 30
+ServerID: 6 Sequence Number: 30
+ServerID: 7 Sequence Number: 30
+ServerID: 8 Sequence Number: 26
+
+New Gossip Entry From Server 0 
+Received at 2020/01/27 15:34:32
+ServerID: 2 Sequence Number: 31
+ServerID: 3 Sequence Number: 31
+ServerID: 4 Sequence Number: 31
+ServerID: 6 Sequence Number: 31
+ServerID: 7 Sequence Number: 31
+
+ getting gossip from curl for server 4:
+
+New Gossip Entry From Server 0 
+Received at 2020/01/27 15:33:30
+ServerID: 2 Sequence Number: 0
+ServerID: 3 Sequence Number: 0
+ServerID: 4 Sequence Number: 0
+ServerID: 5 Sequence Number: 0
+ServerID: 6 Sequence Number: 0
+ServerID: 7 Sequence Number: 0
+ServerID: 8 Sequence Number: 0
+
+New Gossip Entry From Server 7 
+Received at 2020/01/27 15:33:30
+ServerID: 0 Sequence Number: 1
+ServerID: 2 Sequence Number: 0
+ServerID: 3 Sequence Number: 0
+ServerID: 4 Sequence Number: 1
+ServerID: 5 Sequence Number: 0
+ServerID: 6 Sequence Number: 0
+ServerID: 8 Sequence Number: 1
+
+New Gossip Entry From Server 3 
+Received at 2020/01/27 15:33:30
+ServerID: 0 Sequence Number: 1
+ServerID: 2 Sequence Number: 1
+ServerID: 4 Sequence Number: 1
+ServerID: 5 Sequence Number: 1
+ServerID: 6 Sequence Number: 1
+ServerID: 7 Sequence Number: 1
+ServerID: 8 Sequence Number: 1
+
+New Gossip Entry From Server 7 
+Received at 2020/01/27 15:33:32
+ServerID: 0 Sequence Number: 2
+ServerID: 2 Sequence Number: 1
+ServerID: 3 Sequence Number: 1
+ServerID: 4 Sequence Number: 2
+ServerID: 5 Sequence Number: 2
+ServerID: 6 Sequence Number: 1
+ServerID: 8 Sequence Number: 2
+
+New Gossip Entry From Server 0 
+Received at 2020/01/27 15:33:34
+ServerID: 2 Sequence Number: 2
+ServerID: 3 Sequence Number: 2
+ServerID: 4 Sequence Number: 2
+ServerID: 5 Sequence Number: 2
+ServerID: 6 Sequence Number: 2
+ServerID: 7 Sequence Number: 2
+ServerID: 8 Sequence Number: 2
+
+New Gossip Entry From Server 3 
+Received at 2020/01/27 15:33:34
+ServerID: 0 Sequence Number: 3
+ServerID: 2 Sequence Number: 3
+ServerID: 4 Sequence Number: 3
+ServerID: 5 Sequence Number: 3
+ServerID: 6 Sequence Number: 3
+ServerID: 7 Sequence Number: 3
+ServerID: 8 Sequence Number: 3
+
+New Gossip Entry From Server 6 
+Received at 2020/01/27 15:33:36
+ServerID: 0 Sequence Number: 4
+ServerID: 2 Sequence Number: 4
+ServerID: 3 Sequence Number: 3
+ServerID: 4 Sequence Number: 4
+ServerID: 5 Sequence Number: 4
+ServerID: 7 Sequence Number: 4
+ServerID: 8 Sequence Number: 4
+
+New Gossip Entry From Server 5 
+Received at 2020/01/27 15:33:38
+ServerID: 0 Sequence Number: 5
+ServerID: 2 Sequence Number: 4
+ServerID: 3 Sequence Number: 4
+ServerID: 4 Sequence Number: 5
+ServerID: 6 Sequence Number: 4
+ServerID: 7 Sequence Number: 4
+ServerID: 8 Sequence Number: 5
+
+New Gossip Entry From Server 8 
+Received at 2020/01/27 15:33:40
+ServerID: 0 Sequence Number: 6
+ServerID: 2 Sequence Number: 5
+ServerID: 3 Sequence Number: 5
+ServerID: 4 Sequence Number: 6
+ServerID: 5 Sequence Number: 5
+ServerID: 6 Sequence Number: 5
+ServerID: 7 Sequence Number: 5
+
+New Gossip Entry From Server 7 
+Received at 2020/01/27 15:33:40
+ServerID: 0 Sequence Number: 6
+ServerID: 2 Sequence Number: 5
+ServerID: 3 Sequence Number: 5
+ServerID: 4 Sequence Number: 6
+ServerID: 5 Sequence Number: 6
+ServerID: 6 Sequence Number: 5
+ServerID: 8 Sequence Number: 6
+
+New Gossip Entry From Server 5 
+Received at 2020/01/27 15:33:42
+ServerID: 0 Sequence Number: 7
+ServerID: 2 Sequence Number: 6
+ServerID: 3 Sequence Number: 6
+ServerID: 4 Sequence Number: 7
+ServerID: 6 Sequence Number: 6
+ServerID: 7 Sequence Number: 6
+ServerID: 8 Sequence Number: 7
+
+New Gossip Entry From Server 7 
+Received at 2020/01/27 15:33:48
+ServerID: 0 Sequence Number: 10
+ServerID: 2 Sequence Number: 9
+ServerID: 3 Sequence Number: 9
+ServerID: 4 Sequence Number: 10
+ServerID: 5 Sequence Number: 10
+ServerID: 6 Sequence Number: 9
+ServerID: 8 Sequence Number: 10
+
+New Gossip Entry From Server 2 
+Received at 2020/01/27 15:33:52
+ServerID: 0 Sequence Number: 12
+ServerID: 3 Sequence Number: 11
+ServerID: 4 Sequence Number: 12
+ServerID: 5 Sequence Number: 12
+ServerID: 6 Sequence Number: 11
+ServerID: 7 Sequence Number: 12
+ServerID: 8 Sequence Number: 12
+
+New Gossip Entry From Server 3 
+Received at 2020/01/27 15:33:52
+ServerID: 0 Sequence Number: 12
+ServerID: 2 Sequence Number: 12
+ServerID: 4 Sequence Number: 12
+ServerID: 5 Sequence Number: 12
+ServerID: 6 Sequence Number: 12
+ServerID: 7 Sequence Number: 12
+ServerID: 8 Sequence Number: 12
+
+New Gossip Entry From Server 0 
+Received at 2020/01/27 15:33:54
+ServerID: 2 Sequence Number: 12
+ServerID: 3 Sequence Number: 12
+ServerID: 4 Sequence Number: 12
+ServerID: 5 Sequence Number: 12
+ServerID: 6 Sequence Number: 12
+ServerID: 7 Sequence Number: 12
+ServerID: 8 Sequence Number: 12
+
+New Gossip Entry From Server 5 
+Received at 2020/01/27 15:33:54
+ServerID: 0 Sequence Number: 13
+ServerID: 2 Sequence Number: 12
+ServerID: 3 Sequence Number: 12
+ServerID: 4 Sequence Number: 13
+ServerID: 6 Sequence Number: 12
+ServerID: 7 Sequence Number: 12
+ServerID: 8 Sequence Number: 13
+
+New Gossip Entry From Server 2 
+Received at 2020/01/27 15:33:54
+ServerID: 0 Sequence Number: 13
+ServerID: 3 Sequence Number: 12
+ServerID: 4 Sequence Number: 13
+ServerID: 5 Sequence Number: 13
+ServerID: 6 Sequence Number: 12
+ServerID: 7 Sequence Number: 13
+ServerID: 8 Sequence Number: 13
+
+New Gossip Entry From Server 5 
+Received at 2020/01/27 15:33:56
+ServerID: 0 Sequence Number: 14
+ServerID: 2 Sequence Number: 13
+ServerID: 3 Sequence Number: 13
+ServerID: 4 Sequence Number: 14
+ServerID: 6 Sequence Number: 13
+ServerID: 7 Sequence Number: 13
+ServerID: 8 Sequence Number: 14
+
+New Gossip Entry From Server 6 
+Received at 2020/01/27 15:33:56
+ServerID: 0 Sequence Number: 14
+ServerID: 2 Sequence Number: 13
+ServerID: 3 Sequence Number: 13
+ServerID: 4 Sequence Number: 14
+ServerID: 5 Sequence Number: 14
+ServerID: 7 Sequence Number: 14
+ServerID: 8 Sequence Number: 14
+
+New Gossip Entry From Server 0 
+Received at 2020/01/27 15:33:58
+ServerID: 2 Sequence Number: 14
+ServerID: 3 Sequence Number: 14
+ServerID: 4 Sequence Number: 14
+ServerID: 5 Sequence Number: 14
+ServerID: 6 Sequence Number: 14
+ServerID: 7 Sequence Number: 14
+ServerID: 8 Sequence Number: 14
+
+New Gossip Entry From Server 6 
+Received at 2020/01/27 15:33:58
+ServerID: 0 Sequence Number: 15
+ServerID: 2 Sequence Number: 14
+ServerID: 3 Sequence Number: 14
+ServerID: 4 Sequence Number: 15
+ServerID: 5 Sequence Number: 14
+ServerID: 7 Sequence Number: 14
+ServerID: 8 Sequence Number: 15
+
+New Gossip Entry From Server 6 
+Received at 2020/01/27 15:34:00
+ServerID: 0 Sequence Number: 16
+ServerID: 2 Sequence Number: 15
+ServerID: 3 Sequence Number: 15
+ServerID: 4 Sequence Number: 16
+ServerID: 5 Sequence Number: 16
+ServerID: 7 Sequence Number: 16
+ServerID: 8 Sequence Number: 16
+
+New Gossip Entry From Server 3 
+Received at 2020/01/27 15:34:00
+ServerID: 0 Sequence Number: 16
+ServerID: 2 Sequence Number: 16
+ServerID: 4 Sequence Number: 16
+ServerID: 5 Sequence Number: 16
+ServerID: 6 Sequence Number: 16
+ServerID: 7 Sequence Number: 16
+ServerID: 8 Sequence Number: 16
+
+New Gossip Entry From Server 0 
+Received at 2020/01/27 15:34:04
+ServerID: 2 Sequence Number: 17
+ServerID: 3 Sequence Number: 17
+ServerID: 4 Sequence Number: 17
+ServerID: 5 Sequence Number: 17
+ServerID: 6 Sequence Number: 17
+ServerID: 7 Sequence Number: 17
+ServerID: 8 Sequence Number: 17
+
+New Gossip Entry From Server 8 
+Received at 2020/01/27 15:34:04
+ServerID: 0 Sequence Number: 18
+ServerID: 2 Sequence Number: 17
+ServerID: 3 Sequence Number: 17
+ServerID: 4 Sequence Number: 18
+ServerID: 5 Sequence Number: 17
+ServerID: 6 Sequence Number: 17
+ServerID: 7 Sequence Number: 17
+
+New Gossip Entry From Server 5 
+Received at 2020/01/27 15:34:04
+ServerID: 0 Sequence Number: 18
+ServerID: 2 Sequence Number: 17
+ServerID: 3 Sequence Number: 17
+ServerID: 4 Sequence Number: 18
+ServerID: 6 Sequence Number: 17
+ServerID: 7 Sequence Number: 17
+ServerID: 8 Sequence Number: 18
+
+New Gossip Entry From Server 6 
+Received at 2020/01/27 15:34:08
+ServerID: 0 Sequence Number: 20
+ServerID: 2 Sequence Number: 19
+ServerID: 3 Sequence Number: 19
+ServerID: 4 Sequence Number: 20
+ServerID: 5 Sequence Number: 20
+ServerID: 7 Sequence Number: 20
+ServerID: 8 Sequence Number: 20
+
+New Gossip Entry From Server 6 
+Received at 2020/01/27 15:34:10
+ServerID: 0 Sequence Number: 21
+ServerID: 2 Sequence Number: 20
+ServerID: 3 Sequence Number: 20
+ServerID: 4 Sequence Number: 21
+ServerID: 5 Sequence Number: 21
+ServerID: 7 Sequence Number: 21
+ServerID: 8 Sequence Number: 21
+
+New Gossip Entry From Server 3 
+Received at 2020/01/27 15:34:12
+ServerID: 0 Sequence Number: 22
+ServerID: 2 Sequence Number: 22
+ServerID: 4 Sequence Number: 22
+ServerID: 5 Sequence Number: 21
+ServerID: 6 Sequence Number: 22
+ServerID: 7 Sequence Number: 22
+ServerID: 8 Sequence Number: 22
+
+New Gossip Entry From Server 6 
+Received at 2020/01/27 15:34:14
+ServerID: 0 Sequence Number: 23
+ServerID: 2 Sequence Number: 22
+ServerID: 3 Sequence Number: 22
+ServerID: 4 Sequence Number: 23
+ServerID: 5 Sequence Number: 21
+ServerID: 7 Sequence Number: 23
+ServerID: 8 Sequence Number: 23
+
+New Gossip Entry From Server 3 
+Received at 2020/01/27 15:34:14
+ServerID: 0 Sequence Number: 23
+ServerID: 2 Sequence Number: 23
+ServerID: 4 Sequence Number: 23
+ServerID: 5 Sequence Number: 21
+ServerID: 6 Sequence Number: 23
+ServerID: 7 Sequence Number: 23
+ServerID: 8 Sequence Number: 23
+
+New Gossip Entry From Server 2 
+Received at 2020/01/27 15:34:16
+ServerID: 0 Sequence Number: 24
+ServerID: 3 Sequence Number: 23
+ServerID: 4 Sequence Number: 24
+ServerID: 5 Sequence Number: 21
+ServerID: 6 Sequence Number: 24
+ServerID: 7 Sequence Number: 24
+ServerID: 8 Sequence Number: 24
+
+New Gossip Entry From Server 7 
+Received at 2020/01/27 15:34:20
+ServerID: 0 Sequence Number: 26
+ServerID: 2 Sequence Number: 25
+ServerID: 3 Sequence Number: 25
+ServerID: 4 Sequence Number: 26
+ServerID: 6 Sequence Number: 25
+ServerID: 8 Sequence Number: 26
+
+New Gossip Entry From Server 6 
+Received at 2020/01/27 15:34:20
+ServerID: 0 Sequence Number: 26
+ServerID: 2 Sequence Number: 25
+ServerID: 3 Sequence Number: 25
+ServerID: 4 Sequence Number: 26
+ServerID: 7 Sequence Number: 26
+ServerID: 8 Sequence Number: 26
+
+New Gossip Entry From Server 0 
+Received at 2020/01/27 15:34:22
+ServerID: 2 Sequence Number: 26
+ServerID: 3 Sequence Number: 26
+ServerID: 4 Sequence Number: 26
+ServerID: 6 Sequence Number: 26
+ServerID: 7 Sequence Number: 26
+ServerID: 8 Sequence Number: 26
+
+New Gossip Entry From Server 7 
+Received at 2020/01/27 15:34:22
+ServerID: 0 Sequence Number: 27
+ServerID: 2 Sequence Number: 26
+ServerID: 3 Sequence Number: 26
+ServerID: 4 Sequence Number: 27
+ServerID: 6 Sequence Number: 26
+ServerID: 8 Sequence Number: 26
+
+New Gossip Entry From Server 0 
+Received at 2020/01/27 15:34:26
+ServerID: 2 Sequence Number: 28
+ServerID: 3 Sequence Number: 28
+ServerID: 4 Sequence Number: 28
+ServerID: 6 Sequence Number: 28
+ServerID: 7 Sequence Number: 28
+ServerID: 8 Sequence Number: 26
+
+New Gossip Entry From Server 2 
+Received at 2020/01/27 15:34:26
+ServerID: 0 Sequence Number: 29
+ServerID: 3 Sequence Number: 29
+ServerID: 4 Sequence Number: 29
+ServerID: 6 Sequence Number: 29
+ServerID: 7 Sequence Number: 29
+ServerID: 8 Sequence Number: 26
+
+New Gossip Entry From Server 0 
+Received at 2020/01/27 15:34:28
+ServerID: 2 Sequence Number: 29
+ServerID: 3 Sequence Number: 29
+ServerID: 4 Sequence Number: 29
+ServerID: 6 Sequence Number: 29
+ServerID: 7 Sequence Number: 29
+ServerID: 8 Sequence Number: 26
+
+New Gossip Entry From Server 2 
+Received at 2020/01/27 15:34:31
+ServerID: 0 Sequence Number: 31
+ServerID: 3 Sequence Number: 31
+ServerID: 4 Sequence Number: 31
+ServerID: 6 Sequence Number: 30
+ServerID: 7 Sequence Number: 31
+
+New Gossip Entry From Server 6 
+Received at 2020/01/27 15:34:32
+ServerID: 0 Sequence Number: 32
+ServerID: 2 Sequence Number: 31
+ServerID: 3 Sequence Number: 31
+ServerID: 4 Sequence Number: 32
+ServerID: 7 Sequence Number: 32
+
+New Gossip Entry From Server 6 
+Received at 2020/01/27 15:34:34
+ServerID: 0 Sequence Number: 33
+ServerID: 2 Sequence Number: 32
+ServerID: 3 Sequence Number: 32
+ServerID: 4 Sequence Number: 33
+ServerID: 7 Sequence Number: 33
+
+New Gossip Entry From Server 2 
+Received at 2020/01/27 15:34:34
+ServerID: 0 Sequence Number: 33
+ServerID: 3 Sequence Number: 33
+ServerID: 4 Sequence Number: 33
+ServerID: 6 Sequence Number: 33
+ServerID: 7 Sequence Number: 33
+
+ getting gossip from curl for server 6:
+
+New Gossip Entry From Server 5 
+Received at 2020/01/27 15:33:33
+ServerID: 0 Sequence Number: 2
+ServerID: 2 Sequence Number: 1
+ServerID: 3 Sequence Number: 1
+ServerID: 4 Sequence Number: 1
+ServerID: 6 Sequence Number: 1
+ServerID: 7 Sequence Number: 1
+ServerID: 8 Sequence Number: 1
+
+New Gossip Entry From Server 8 
+Received at 2020/01/27 15:33:34
+ServerID: 0 Sequence Number: 3
+ServerID: 2 Sequence Number: 2
+ServerID: 3 Sequence Number: 2
+ServerID: 4 Sequence Number: 3
+ServerID: 5 Sequence Number: 2
+ServerID: 6 Sequence Number: 2
+ServerID: 7 Sequence Number: 2
+
+New Gossip Entry From Server 0 
+Received at 2020/01/27 15:33:36
+ServerID: 2 Sequence Number: 3
+ServerID: 3 Sequence Number: 3
+ServerID: 4 Sequence Number: 3
+ServerID: 5 Sequence Number: 3
+ServerID: 6 Sequence Number: 3
+ServerID: 7 Sequence Number: 3
+ServerID: 8 Sequence Number: 3
+
+New Gossip Entry From Server 7 
+Received at 2020/01/27 15:33:38
+ServerID: 0 Sequence Number: 5
+ServerID: 2 Sequence Number: 4
+ServerID: 3 Sequence Number: 4
+ServerID: 4 Sequence Number: 5
+ServerID: 5 Sequence Number: 5
+ServerID: 6 Sequence Number: 4
+ServerID: 8 Sequence Number: 5
+
+New Gossip Entry From Server 3 
+Received at 2020/01/27 15:33:40
+ServerID: 0 Sequence Number: 6
+ServerID: 2 Sequence Number: 6
+ServerID: 4 Sequence Number: 6
+ServerID: 5 Sequence Number: 6
+ServerID: 6 Sequence Number: 6
+ServerID: 7 Sequence Number: 6
+ServerID: 8 Sequence Number: 6
+
+New Gossip Entry From Server 5 
+Received at 2020/01/27 15:33:44
+ServerID: 0 Sequence Number: 8
+ServerID: 2 Sequence Number: 7
+ServerID: 3 Sequence Number: 7
+ServerID: 4 Sequence Number: 8
+ServerID: 6 Sequence Number: 7
+ServerID: 7 Sequence Number: 7
+ServerID: 8 Sequence Number: 8
+
+New Gossip Entry From Server 5 
+Received at 2020/01/27 15:33:48
+ServerID: 0 Sequence Number: 10
+ServerID: 2 Sequence Number: 9
+ServerID: 3 Sequence Number: 9
+ServerID: 4 Sequence Number: 10
+ServerID: 6 Sequence Number: 9
+ServerID: 7 Sequence Number: 9
+ServerID: 8 Sequence Number: 10
+
+New Gossip Entry From Server 4 
+Received at 2020/01/27 15:33:52
+ServerID: 0 Sequence Number: 12
+ServerID: 2 Sequence Number: 11
+ServerID: 3 Sequence Number: 11
+ServerID: 5 Sequence Number: 11
+ServerID: 6 Sequence Number: 11
+ServerID: 7 Sequence Number: 11
+ServerID: 8 Sequence Number: 11
+
+New Gossip Entry From Server 8 
+Received at 2020/01/27 15:33:52
+ServerID: 0 Sequence Number: 12
+ServerID: 2 Sequence Number: 11
+ServerID: 3 Sequence Number: 11
+ServerID: 4 Sequence Number: 12
+ServerID: 5 Sequence Number: 11
+ServerID: 6 Sequence Number: 11
+ServerID: 7 Sequence Number: 11
+
+New Gossip Entry From Server 8 
+Received at 2020/01/27 15:33:54
+ServerID: 0 Sequence Number: 13
+ServerID: 2 Sequence Number: 12
+ServerID: 3 Sequence Number: 12
+ServerID: 4 Sequence Number: 13
+ServerID: 5 Sequence Number: 12
+ServerID: 6 Sequence Number: 12
+ServerID: 7 Sequence Number: 12
+
+New Gossip Entry From Server 2 
+Received at 2020/01/27 15:34:04
+ServerID: 0 Sequence Number: 18
+ServerID: 3 Sequence Number: 17
+ServerID: 4 Sequence Number: 18
+ServerID: 5 Sequence Number: 18
+ServerID: 6 Sequence Number: 17
+ServerID: 7 Sequence Number: 18
+ServerID: 8 Sequence Number: 18
+
+New Gossip Entry From Server 0 
+Received at 2020/01/27 15:34:06
+ServerID: 2 Sequence Number: 18
+ServerID: 3 Sequence Number: 18
+ServerID: 4 Sequence Number: 18
+ServerID: 5 Sequence Number: 18
+ServerID: 6 Sequence Number: 18
+ServerID: 7 Sequence Number: 18
+ServerID: 8 Sequence Number: 18
+
+New Gossip Entry From Server 4 
+Received at 2020/01/27 15:34:08
+ServerID: 0 Sequence Number: 20
+ServerID: 2 Sequence Number: 19
+ServerID: 3 Sequence Number: 19
+ServerID: 5 Sequence Number: 19
+ServerID: 6 Sequence Number: 19
+ServerID: 7 Sequence Number: 19
+ServerID: 8 Sequence Number: 19
+
+New Gossip Entry From Server 8 
+Received at 2020/01/27 15:34:08
+ServerID: 0 Sequence Number: 20
+ServerID: 2 Sequence Number: 19
+ServerID: 3 Sequence Number: 19
+ServerID: 4 Sequence Number: 20
+ServerID: 5 Sequence Number: 19
+ServerID: 6 Sequence Number: 19
+ServerID: 7 Sequence Number: 19
+
+New Gossip Entry From Server 3 
+Received at 2020/01/27 15:34:08
+ServerID: 0 Sequence Number: 20
+ServerID: 2 Sequence Number: 20
+ServerID: 4 Sequence Number: 20
+ServerID: 5 Sequence Number: 20
+ServerID: 6 Sequence Number: 20
+ServerID: 7 Sequence Number: 20
+ServerID: 8 Sequence Number: 20
+
+New Gossip Entry From Server 7 
+Received at 2020/01/27 15:34:14
+ServerID: 0 Sequence Number: 23
+ServerID: 2 Sequence Number: 22
+ServerID: 3 Sequence Number: 22
+ServerID: 4 Sequence Number: 23
+ServerID: 5 Sequence Number: 21
+ServerID: 6 Sequence Number: 22
+ServerID: 8 Sequence Number: 23
+
+New Gossip Entry From Server 0 
+Received at 2020/01/27 15:34:16
+ServerID: 2 Sequence Number: 23
+ServerID: 3 Sequence Number: 23
+ServerID: 4 Sequence Number: 23
+ServerID: 5 Sequence Number: 21
+ServerID: 6 Sequence Number: 23
+ServerID: 7 Sequence Number: 23
+ServerID: 8 Sequence Number: 23
+
+New Gossip Entry From Server 3 
+Received at 2020/01/27 15:34:16
+ServerID: 0 Sequence Number: 24
+ServerID: 2 Sequence Number: 24
+ServerID: 4 Sequence Number: 24
+ServerID: 5 Sequence Number: 21
+ServerID: 6 Sequence Number: 24
+ServerID: 7 Sequence Number: 24
+ServerID: 8 Sequence Number: 24
+
+New Gossip Entry From Server 8 
+Received at 2020/01/27 15:34:18
+ServerID: 0 Sequence Number: 25
+ServerID: 2 Sequence Number: 24
+ServerID: 3 Sequence Number: 24
+ServerID: 4 Sequence Number: 25
+ServerID: 5 Sequence Number: 21
+ServerID: 6 Sequence Number: 24
+ServerID: 7 Sequence Number: 24
+
+New Gossip Entry From Server 0 
+Received at 2020/01/27 15:34:20
+ServerID: 2 Sequence Number: 25
+ServerID: 3 Sequence Number: 25
+ServerID: 4 Sequence Number: 25
+ServerID: 5 Sequence Number: 21
+ServerID: 6 Sequence Number: 25
+ServerID: 7 Sequence Number: 25
+ServerID: 8 Sequence Number: 25
+
+New Gossip Entry From Server 0 
+Received at 2020/01/27 15:34:24
+ServerID: 2 Sequence Number: 27
+ServerID: 3 Sequence Number: 27
+ServerID: 4 Sequence Number: 27
+ServerID: 6 Sequence Number: 27
+ServerID: 7 Sequence Number: 27
+ServerID: 8 Sequence Number: 26
+
+New Gossip Entry From Server 3 
+Received at 2020/01/27 15:34:26
+ServerID: 0 Sequence Number: 29
+ServerID: 2 Sequence Number: 28
+ServerID: 4 Sequence Number: 29
+ServerID: 6 Sequence Number: 29
+ServerID: 7 Sequence Number: 29
+ServerID: 8 Sequence Number: 26
+
+New Gossip Entry From Server 2 
+Received at 2020/01/27 15:34:28
+ServerID: 0 Sequence Number: 30
+ServerID: 3 Sequence Number: 30
+ServerID: 4 Sequence Number: 30
+ServerID: 6 Sequence Number: 30
+ServerID: 7 Sequence Number: 30
+ServerID: 8 Sequence Number: 26
+
+getting gossip for server 7:
+
+New Gossip Entry From Server 5 
+Received at 2020/01/27 15:33:31
+ServerID: 0 Sequence Number: 1
+ServerID: 2 Sequence Number: 0
+ServerID: 3 Sequence Number: 0
+ServerID: 4 Sequence Number: 1
+ServerID: 6 Sequence Number: 0
+ServerID: 7 Sequence Number: 0
+ServerID: 8 Sequence Number: 1
+
+New Gossip Entry From Server 6 
+Received at 2020/01/27 15:33:32
+ServerID: 0 Sequence Number: 2
+ServerID: 2 Sequence Number: 1
+ServerID: 3 Sequence Number: 1
+ServerID: 4 Sequence Number: 2
+ServerID: 5 Sequence Number: 1
+ServerID: 7 Sequence Number: 1
+ServerID: 8 Sequence Number: 2
+
+New Gossip Entry From Server 8 
+Received at 2020/01/27 15:33:38
+ServerID: 0 Sequence Number: 5
+ServerID: 2 Sequence Number: 4
+ServerID: 3 Sequence Number: 4
+ServerID: 4 Sequence Number: 5
+ServerID: 5 Sequence Number: 4
+ServerID: 6 Sequence Number: 4
+ServerID: 7 Sequence Number: 4
+
+New Gossip Entry From Server 6 
+Received at 2020/01/27 15:33:46
+ServerID: 0 Sequence Number: 9
+ServerID: 2 Sequence Number: 9
+ServerID: 3 Sequence Number: 8
+ServerID: 4 Sequence Number: 9
+ServerID: 5 Sequence Number: 9
+ServerID: 7 Sequence Number: 9
+ServerID: 8 Sequence Number: 9
+
+New Gossip Entry From Server 3 
+Received at 2020/01/27 15:33:46
+ServerID: 0 Sequence Number: 9
+ServerID: 2 Sequence Number: 9
+ServerID: 4 Sequence Number: 9
+ServerID: 5 Sequence Number: 9
+ServerID: 6 Sequence Number: 9
+ServerID: 7 Sequence Number: 9
+ServerID: 8 Sequence Number: 9
+
+New Gossip Entry From Server 3 
+Received at 2020/01/27 15:33:48
+ServerID: 0 Sequence Number: 10
+ServerID: 2 Sequence Number: 10
+ServerID: 4 Sequence Number: 10
+ServerID: 5 Sequence Number: 10
+ServerID: 6 Sequence Number: 10
+ServerID: 7 Sequence Number: 10
+ServerID: 8 Sequence Number: 10
+
+New Gossip Entry From Server 8 
+Received at 2020/01/27 15:33:58
+ServerID: 0 Sequence Number: 15
+ServerID: 2 Sequence Number: 14
+ServerID: 3 Sequence Number: 14
+ServerID: 4 Sequence Number: 15
+ServerID: 5 Sequence Number: 14
+ServerID: 6 Sequence Number: 14
+ServerID: 7 Sequence Number: 14
+
+New Gossip Entry From Server 5 
+Received at 2020/01/27 15:34:00
+ServerID: 0 Sequence Number: 16
+ServerID: 2 Sequence Number: 15
+ServerID: 3 Sequence Number: 15
+ServerID: 4 Sequence Number: 16
+ServerID: 6 Sequence Number: 15
+ServerID: 7 Sequence Number: 15
+ServerID: 8 Sequence Number: 16
+
+New Gossip Entry From Server 2 
+Received at 2020/01/27 15:34:00
+ServerID: 0 Sequence Number: 16
+ServerID: 3 Sequence Number: 15
+ServerID: 4 Sequence Number: 16
+ServerID: 5 Sequence Number: 16
+ServerID: 6 Sequence Number: 15
+ServerID: 7 Sequence Number: 16
+ServerID: 8 Sequence Number: 16
+
+New Gossip Entry From Server 4 
+Received at 2020/01/27 15:34:04
+ServerID: 0 Sequence Number: 18
+ServerID: 2 Sequence Number: 17
+ServerID: 3 Sequence Number: 17
+ServerID: 5 Sequence Number: 17
+ServerID: 6 Sequence Number: 17
+ServerID: 7 Sequence Number: 17
+ServerID: 8 Sequence Number: 17
+
+New Gossip Entry From Server 8 
+Received at 2020/01/27 15:34:20
+ServerID: 0 Sequence Number: 26
+ServerID: 2 Sequence Number: 25
+ServerID: 3 Sequence Number: 25
+ServerID: 4 Sequence Number: 26
+ServerID: 5 Sequence Number: 21
+ServerID: 6 Sequence Number: 25
+ServerID: 7 Sequence Number: 25
+
+that's all, folks
